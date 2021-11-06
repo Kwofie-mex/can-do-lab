@@ -22,5 +22,7 @@ window.onclick = function(event) {
         openDropdown.classList.remove('show');
       }
     }
+    document.getElementById("menubar").innerText ="menu"
+
   }
 }
