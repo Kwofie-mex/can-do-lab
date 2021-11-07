@@ -32,6 +32,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: "Roboto", Helvetica,Arial,sans-serif;
+
 }
 ol, ul {
 	list-style: none;
@@ -113,16 +115,13 @@ header{
 #logo-img{
 	background-color: #cd3e3e;
 	padding: 10px 5px;
-	flex-basis: 75px;
 	margin-left: 8px;
 	color: #FFF;
 	align-self: center;
 	font-size: 14px;
-	font-family: "Roboto", Helvetica,Arial,sans-serif;
 }
 h1{
 	font-size: 14px;
-	font-family: "Roboto", Helvetica,Arial,sans-serif;
 	padding-left: 10px;
 }
 nav a{
@@ -135,10 +134,109 @@ nav a:last-child{
 }
 /* end of header and nav styling*/
 
+main{
+	display: flex;
+	flex-direction: column;
+	height: 520px;
+}
+.section-header{
+	background-image: url("../image/img.jpg");
+	display: flex;
+	flex-basis: 100%;
+	justify-content: center;
+	height: 240px;
+	font-family: "Roboto", Helvetica,Arial,sans-serif;
+	font-size: 28px;
+	color: #FFF;
+	font-weight: 900;
+	flex: 0 0 230px;
+}
+#section1, #section2, #section3{
+	background-color: #FFF;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #504a4a;
+	border-bottom: 0.1px solid #b3aaaa;
+	margin: 0 20px;
+	padding-bottom: 15px;
 
-.topbar{
-	height: 265px;
-	background-image: url('image/img.jpg');
+}
+#section2, #section3{
+		border-bottom: none;
+}
+h2{
+	align-self: center;
+}
+
+ .main_section p:nth-child(2){
+	line-height:1.5;
+}
+#section1, #section2 p{
+	font-size: 14px;
+	color: #000;
+	align-self: center;
+	text-align: center;
+}
+.main_section p:first-child{
+	align-self: center;
+	font-size: 24px;
+	padding-top: 15px;
+	font-weight: 900;
+	margin: 10px;
+
+}
+#section2 p:first-child{
+	font-size: 24px;
+
+}
+
+#section1 p:last-child{
+	padding-top: 10px;
+}
+#section1 p a{
+	color: #FF0000;
+	text-decoration: none;
+}
+#section2 p:last-child{
+	margin-top: 10px;
+	padding: 15px;
+	background-color: #cd3e3e;
+	border-radius: 5px;
+	border: 1px solid #fff;
+}
+#section2 p a{
+	text-decoration: none;
+	color: #FFF;
+	font-size: 16px;
+}
+#section3 p{
+	font-size: 16px;
+	margin-top: 5px;
+	padding-top: 5px;
+}
+#section3 li{
+	list-style: none;
+	width: 42px;
+	height: 42px;
+	border-radius: 21px;
+	background-color: #5567;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 10px;
+}
+#section3 li #facebook{
+	font-size: 24px;
+	color: #0000FF;
+}
+#section3 li #twittter{
+	font-size: 24px;
+	color:#429bd6
+}
+#socoil_media_link{
+	display: flex;
+	align-self: center;
 }
 @media only screen and (min-width: 780px) {
 	h1{
@@ -174,6 +272,33 @@ nav a:last-child{
 	nav a:last-child{
 	  border-bottom: none;
 	}
+	main{
+		flex-direction: row;
+		background-image: url("../image/img.jpg");
+		justify-content: flex-end;
+
+	}
+	.section-header h2{
+		font-size: 200%;
+	}
+	main .section-header{
+		flex-grow: 2;
+		align-self: center;
+	}
+	main #subsection{
+		align-self: center;
+		align-content: flex-end;
+		flex-basis: 320px;
+		margin-right: 21%;
+		margin-left: 4%;
+		background-color: #cd3e3e;
+		padding-top: 10px;
+		border-radius: 10px;
+	}
+	 #section1, #section2, #section3 {
+	 	margin: 0;
+	 }
+
 
 /* end of header and nav styling*/
 
